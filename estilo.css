@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff0000 50%, #ffffff 50%), url(img/pa3.jpg);    
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+    margin: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.photo-container {
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.photo-container.horizontal {
+    flex-direction: row;
+}
+
+.photo-container.vertical {
+    flex-direction: column;
+}
+.photo-container.medio{
+    flex-direction: row;
+}
+
+
+.photo-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+
+.photo-container .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.photo-container.flipped .message {
+    visibility: visible;
+}
+.message{
+
+    font-family: cursive;
+}

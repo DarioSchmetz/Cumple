@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feliz Cumpleaños Papá</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>web</li>
+                <li>contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hgroup>
+            <h1>Esto es un pagina web por tu cumple</h1>
+            <h2>Espero que te guste</h2>
+        </hgroup>
+    </main>
+    <div id="container">
+        <div class="photo-container horizontal" onclick="flipImage(this)">
+            <img src="img/cumple.jpg" alt="Imagen de papá" id="cumple">
+            <div class="message">¡Feliz Cumpleaños, Papá!</div>
+            <img src="img/pa.jpg" alt="Imagen de papá" id="pa">
+        </div>
+        <div class="photo-container vertical" onclick="flipImage(this)">
+            <img src="img/pa.jpg" alt="Imagen de papá">
+            <div class="message">¡Te quiero mucho!</div>
+            <img src="img/cumple.jpg" alt="Imagen de papá">
+        </div>
+        <div class="photo-container medio" onclick="flipImage(this)">
+          <img src="img/pa.jpg" alt="Imagen de papá"  id="pa3">
+          <div class="message">¡gracias por todo!</div>
+          <img src="img/cumple.jpg" alt="Imagen de papá">
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
